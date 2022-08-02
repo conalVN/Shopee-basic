@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee - by Conal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./src/file/style.css">
     <link rel="stylesheet" href="./src/file/model.css">
     <link rel="stylesheet" href="./src/file/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 </head>
 <body>
     <div id="app">
@@ -130,7 +134,493 @@
         </header>
 
         <main id="content">
+            <article class="first-bg">
+                <section class="content__banner">
+                    <div class="grid wide">
+                        <div class="row no-gutters">
+                            <div class="col-8 col">
+                                <div class="content__slider">
+                                    <div class="content__slider--item">
+                                        <img src="./src/images/sl.png" class="slider-item-img"></img>
+                                    </div>
+                                    <div class="content__slider--item">
+                                        <img src="./src/images/sl1.png" class="slider-item-img"></img>
+                                    </div>
+                                    <div class="content__slider--item">
+                                        <img src="./src/images/sl2.png" class="slider-item-img"></img>
+                                    </div>
+                                    <div class="content__slider--item">
+                                        <img src="./src/images/sl3.png" class="slider-item-img"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="content__banner--sm">
+                                    <div class="banner-sm">
+                                        <img src="./src/images/banner-sm1.png" alt="">
+                                    </div>
+                                    <div class="banner-sm">
+                                        <img src="./src/images/banner-sm2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="content__option wide">
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op.gif" alt="">
+                            </div>
+                            <p class="content__option--desc">Khung Giờ Săn Sale</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op1.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Gì Cũng Rẻ - Mua Là Freeship</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op2.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Miễn Phí Vận Chuyển</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op3.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Bắt Trend - Giá Sốc</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op4.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Hoàn Xu 6% - Lên Đến 200K</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op5.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Hàng Hiệu Giá Tốt</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op6.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Hàng Quốc Tế</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op7.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Nạp Thẻ, Hóa Đơn & Phim</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op8.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Dale Sốc Từ 1K</p>
+                        </a>
+                    </div>
+                    <div class="content__option--item">
+                        <a href="#" class="content__option--link">
+                            <div class="content__option--img">
+                                <img src="./src/images/op9.png" alt="">
+                            </div>
+                            <p class="content__option--desc">Chọn 6 Số Trúng Tiền Triệu</p>
+                        </a>
+                    </div>
+                </section>
+            </article>
 
+            <article class="second-bg">
+                <section class="banner-lg">
+                    <div class="banner-img">
+                        <a href="#">
+                            <img src="./src/images/banner-lg.png" alt="">
+                        </a>
+                    </div>
+                </section>
+
+                <section class="category wide">
+                    <h3 class="category__heading">Danh Mục</h3>
+                    <div class="category__list--wrapper">
+                        <ul class="category__list">
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Thời trang nam</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate1.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Thời trang nữ</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate20.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Điện thoại và Phụ Kiện</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate22.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Mẹ và Bé</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate21.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Thiết Bị Điện Tử</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate23.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Nhà cửa và Đời Sống</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate2.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Máy Ảnh và Máy Quay Phim</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate3.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Sức Khỏe</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate4.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Đồng Hồ</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate5.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Giày Dép Nữ</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate6.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Giày Dép Nam</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate7.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Túi Ví Nữ</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate8.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Thiết Bị Điện Gia Dụng</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate9.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Phụ Kiện và Trang Sức Nữ</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate10.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Thể Thao và Du Lịch</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate11.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Bách Hóa Online</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate12.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Ô tô & Xe máy & Xe đạp</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate13.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Nhà Sách Online</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate14.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Balo và Túi Ví Nam</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate15.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Thời Trang Trẻ Em</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate16.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Đồ Chơi</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate17.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Giặt giũ và Chăm Sóc Nhà Cửa</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="category__list--item">
+                                <div class="category__list--card">
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate18.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Chăm Sóc Thú Cưng</p>
+                                    </a>
+                                    <a href="#" class="category-card-link">
+                                        <div class="category-card-img">
+                                            <img src="./src/images/cate19.png" alt="">
+                                        </div>
+                                        <p class="category-card-desc">Vocher & Dịch Vụ</p>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="flashSale wide">
+                    <div class="flashSale__header">
+                        <div class="flashSale__header--img">
+                            <img src="./src/images/flashSale.png" alt="">
+                            <span id="countDown"></span>
+                        </div>
+                        <a href="#" class="flashSale__header--link">
+                            <span>Xem tất cả</span>
+                            <i class='bx bx-chevron-right'></i>
+                        </a>
+                    </div>
+                    <div class="flashSale__list--wrapper">
+                        <ul class="flashSale__list">
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;22.599.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale1.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;18.149.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale2.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;22.599.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale3.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;11.429.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale4.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;4.745.000</p>
+                                        <input type="text" placeholder="Đã bán 2">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale5.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;4.175.000</p>
+                                        <input type="text" placeholder="Đã bán 2">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;22.599.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale1.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;18.149.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale2.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;22.599.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale3.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;11.429.000</p>
+                                        <input type="text" placeholder="Đã bán 0">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale4.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;4.745.000</p>
+                                        <input type="text" placeholder="Đã bán 2">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flashSale__list--item">
+                                <div class="flashSale__list--card">
+                                    <a href="#" class="flashSale-card-link">
+                                        <div class="flashSale-card-img">
+                                            <img src="./src/images/sale5.jpg" alt="">
+                                        </div>
+                                        <p class="flashSale--price">&#8363;4.175.000</p>
+                                        <input type="text" placeholder="Đã bán 2">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="banner-lg">
+                    <div class="banner-img">
+                        <a href="#">
+                            <img src="./src/images/banner-link.png" alt="">
+                        </a>
+                    </div>
+                </section>
+                
+
+            </article>
         </main>
 
         <footer id="footer">
