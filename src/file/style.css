@@ -86,6 +86,22 @@ button, input {
     content: '';
 }
 
+.searchTrend__list .slick-next::before {
+    content: '→';
+    color: var(--primary-color);
+}
+.searchTrend__list .slick-prev::before {
+    content: '←';
+    color: var(--primary-color);
+}
+
+.searchTrend__list .slick-prev {
+    left: -14px;
+}
+
+.searchTrend__list .slick-next {
+    right: -8px;
+}
 
 .content__slider:hover .slick-next::before,
 .category__list:hover .slick-next::before,
@@ -831,8 +847,227 @@ main.content {
     color: var(--second-text-color);
 }
 
+/* Trending */
+.trending {
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.trending__header {
+    padding: 2rem 1.8rem;
+    margin-top: 2rem;
+}
+
+.trending__heading {
+    flex: 1;
+    font-size: 2rem;
+    color: rgba(117, 117, 117, 1);
+    text-transform: uppercase;
+}
+
+.trending__header--right {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.trending__content {
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.trending__content--link {
+    width: 25%;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    padding-right: 1rem;
+}
+
+.trending__content-text {
+    color: var(--black-color);
+    flex: 13 0;
+    padding-left: 2rem;
+}
+
+.trending__content-text p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-bottom: .5rem;
+    text-overflow: ellipsis;
+}
+
+.trending__content-text span {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.trending__content-img {
+    width: 100%;
+    flex: 10 0;
+}
+
+.trending__content-img img{
+    width: 100%;
+}
+
+/* searchTrend */
+
+.searchTrend {
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.searchTrend__header {
+    margin-top: 2rem;
+    padding: 2rem 1.8rem;  
+    color: var(--primary-color);
+}
+
+.searchTrend__heading {
+    flex: 1;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.searchTrend__right {
+    font-size: 1.5rem;
+}
+
+.searchTrend__content {
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.searchTrend__list {
+    margin-bottom: 2rem;
+}
+
+.searchTrend__list-item {
+    text-align: center;
+    padding: 5px;
+}
+
+.searchTrend-item-img {
+    position: relative;
+}
+
+.searchTrend__list-item::before {
+    content: "";
+}
+
+.searchTrend-item-img::after {
+    content: "Bán 161k+ / tháng";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 10px;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.searchTrend-item-img img{
+    width: 100%;
+}
+
+.searchTrend-item-desc {
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    color: rgba(0, 0, 0, .7);
+    margin: 2rem auto;
+    text-transform: capitalize;
+}
+
+/* Suggest */
+.suggest {
+    height: 100%;
+}
+
+.suggest__header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: var(--height-header);
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 2rem 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+
+}
+
+.suggest__heading,
+.suggest__header p {
+    width: 100%;
+}
+
+.suggest__card {
+    border-radius: 4px;
+    margin-top: .8rem;
+    background-color: var(--white-color);
+}
+
+.suggest__card-img {
+    width: 100%;
+}
+
+.suggest__card-img img {
+    width: 100%;
+}
+
+.suggest__card-body {
+    padding: 5px 8px;
+}
+
+.suggest__card-title {
+    height: 2.8rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.suggest__card-vocher {
+    height: 2rem;
+}
+
+.suggest__card-price {
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+.suggest__card-price span:nth-child(1) {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.suggest__card-price span:nth-child(2) {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.suggest__pagination {
+    height: 100%;
+    text-align: center;
+    margin: 5rem auto;
+    padding-bottom: 5rem;
+}
+
+.btn-page {
+    min-width: 100px;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
 
 /* Footer */
 footer {
-    height: 500px;
-}
+    height: 1000px;
+    margin-top: 20px;
+}  

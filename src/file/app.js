@@ -78,6 +78,12 @@ $('.mall__slider').slick({
     autoplaySpeed: 2000,
 });
 
+$('.searchTrend__list').slick({
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    infinite: true,
+});
+
 
 
 
